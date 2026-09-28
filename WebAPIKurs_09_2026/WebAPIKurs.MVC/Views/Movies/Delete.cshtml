@@ -1,0 +1,35 @@
+@using WebAPIKurs.Shared.Entities
+@model Movie
+
+@{
+    ViewData["Title"] = "Film löschen";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="alert alert-danger">
+    Möchtest du diesen Film wirklich löschen?
+</div>
+
+<dl class="row">
+    <dt class="col-sm-3">Titel</dt>
+    <dd class="col-sm-9">@Model.Title</dd>
+
+    <dt class="col-sm-3">Beschreibung</dt>
+    <dd class="col-sm-9">@Model.Description</dd>
+
+    <dt class="col-sm-3">Preis</dt>
+    <dd class="col-sm-9">@Model.Price €</dd>
+
+    <dt class="col-sm-3">Jahr</dt>
+    <dd class="col-sm-9">@(Model.Year?.ToString() ?? "-")</dd>
+
+    <dt class="col-sm-3">Genre</dt>
+    <dd class="col-sm-9">@Model.Genre</dd>
+</dl>
+
+<form asp-action="Delete" method="post">
+    <input asp-for="Id" type="hidden" />
+    <button type="submit" class="btn btn-danger">Löschen bestätigen</button>
+    <a asp-action="Index" class="btn btn-secondary">Abbrechen</a>
+</form>

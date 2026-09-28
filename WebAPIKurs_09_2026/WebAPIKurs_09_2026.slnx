@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="URL-Links.md" />
+  </Folder>
+  <Project Path="JWTBearerTokenAuthentificationSample.ClientConsole/JWTBearerTokenAuthentificationSample.ClientConsole.csproj" Id="fcfd9769-1c53-42a2-b434-1d63bb734d92" />
+  <Project Path="JWTBearerTokenAuthentificationSample/JWTBearerTokenAuthentificationSample.csproj" Id="434d6685-5ce4-481e-a1e7-7acf5e61af0a" />
+  <Project Path="ODataWebAPISamples/ODataWebAPISamples.csproj" Id="de0868fd-5524-4009-a5e0-3ff44b272c3d" />
+  <Project Path="WebAPIKurs.MVC/WebAPIKurs.MVC.csproj" Id="c1b99697-3d93-4260-8c2e-c8eaee4d8687" />
+  <Project Path="WebAPIKurs.Shared/WebAPIKurs.Shared.csproj" Id="e1e450cd-f0a2-4e96-8cf8-8546378c0e88" />
+  <Project Path="WebAPIKurs/WebAPIKurs.csproj" />
+  <Project Path="WebApplication1/WebApplication1.csproj" Id="7fce3e5f-7bbc-4bff-b2ca-a20ba16394ee" />
+</Solution>

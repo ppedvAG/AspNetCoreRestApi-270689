@@ -1,0 +1,30 @@
+@using WebAPIKurs.Shared.Entities
+@model Movie
+
+@{
+    ViewData["Title"] = "Filmdetails";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-3">Titel</dt>
+        <dd class="col-sm-9">@Model.Title</dd>
+
+        <dt class="col-sm-3">Beschreibung</dt>
+        <dd class="col-sm-9">@Model.Description</dd>
+
+        <dt class="col-sm-3">Preis</dt>
+        <dd class="col-sm-9">@Model.Price €</dd>
+
+        <dt class="col-sm-3">Jahr</dt>
+        <dd class="col-sm-9">@(Model.Year?.ToString() ?? "-")</dd>
+
+        <dt class="col-sm-3">Genre</dt>
+        <dd class="col-sm-9">@Model.Genre</dd>
+    </dl>
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Bearbeiten</a>
+<a asp-action="Index" class="btn btn-secondary">Zurück zur Liste</a>
